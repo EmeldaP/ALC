@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="com.example.machoene.alc4phase1.MyProfile">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:saveEnabled="true"
+        android:padding="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="7dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:tag="20sp"
+        android:text=" Emelda Phasha"
+        app:layout_constraintTop_toBottomOf="@id/pic"
+        android:background="@color/colorAccent"
+
+        />
+
+    <TextView
+        android:id="@+id/track"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="7dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="Track: Android"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:background="@color/colorAccent"
+
+        />
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="7dp"
+        android:text="Country: South Africa"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/track"
+        android:background="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/editText8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:padding="7dp"
+        android:layout_marginRight="8dp"
+        android:text="Email: phashae25@gmail.com"
+        android:textSize="20sp"
+        android:onClick="name"
+        app:layout_constraintTop_toBottomOf="@+id/country"
+        android:background="@color/colorAccent"
+        tools:ignore="OnClick"
+        />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="7dp"
+        android:textSize="20sp"
+        android:text="Contact Number: 0726478359"
+        app:layout_constraintTop_toBottomOf="@id/editText8"
+        android:background="@color/colorAccent"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/slack"
+        android:background="@color/colorAccent"
+        android:text="Slack Username: @Emelda Phasha"
+        android:padding="7dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/number"/>
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>
